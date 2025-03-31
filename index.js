@@ -77,7 +77,9 @@ function ajouterAmi(userObject, ami) {
 }
 
 function supprimerAmi(userObject, ami) {
-    (userObject.friends).splice((userObject.friends).indexOf("ami"), 1);
+    if ((userObject.friends).includes(ami)) {
+        (userObject.friends).splice((userObject.friends).indexOf(ami), 1);
+    }
 }
 
 
