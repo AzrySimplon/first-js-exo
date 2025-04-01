@@ -47,7 +47,7 @@ function saluerUtilisateur(name) {
 
 //b
 function calculerAnneeNaissance(age) {
-    console.log(2025 - age);
+    return (2025 - age);
 }
 
 //c
@@ -63,8 +63,7 @@ function verifierMajorite(age) {
 //d
 function afficherProfil(userObject) {
     saluerUtilisateur(user.name);
-    console.log(" Vous avez " + userObject.age + " ans et êtes né.e en ");
-    calculerAnneeNaissance(user.age);
+    console.log(" Vous avez " + userObject.age + " ans et êtes né.e en " + calculerAnneeNaissance(user.age));
     console.log("Vous habitez à " + userObject.city + "\n Vos amis sont:");
     (user.friends).forEach(friend => {
         console.log(friend)
