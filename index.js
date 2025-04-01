@@ -35,6 +35,9 @@ user.friends[2] = "Antoine";
 //9
 if (user.age < 18) {
     console.log("Mineur");
+}
+else if (user.age < 26) {
+    console.log("Jeune Adulte");
 } else {
     console.log("Adulte");
 }
